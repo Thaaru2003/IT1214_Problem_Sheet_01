@@ -5,7 +5,7 @@ class Student1 {
     private int exam3;
 
     // Constructor
-    Student(String name, int exam1, int exam2, int exam3) {
+    Student1(String name, int exam1, int exam2, int exam3) {
         this.name = name;
         setExam1(exam1); // Use setter for validation
         setExam2(exam2); // Use setter for validation
@@ -62,7 +62,7 @@ class Student1 {
         // Main method for testing
         // Use try-catch to create a Student object
         try {
-            Student john = new Student("John", 75, 110, 90); // 110 is an invalid score
+            Student1 john = new Student1("John", 75, 110, 90); // 110 is an invalid score
             System.out.println("Student created successfully!");
             System.out.println("Student Name: " + john.getName());
             System.out.printf("Average Exam Score: %.2f%n", john.calculateAverage());
@@ -72,7 +72,7 @@ class Student1 {
 
         System.out.println("\n--- Testing with valid scores ---");
         try {
-            Student jane = new Student("Jane", 85, 92, 78);
+            Student1 jane = new Student1("Jane", 85, 92, 78);
             System.out.println("Student created successfully!");
             System.out.println("Student Name: " + jane.getName());
             System.out.printf("Average Exam Score: %.2f%n", jane.calculateAverage());
